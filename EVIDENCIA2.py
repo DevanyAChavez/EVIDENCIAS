@@ -167,10 +167,10 @@ def Opcion_6():
     while (respuesta != 1) and (respuesta != 2):
         respuesta = int(input("Respuesta invalida eliga una de las 2 opciones que aparecen: "))
     if respuesta == 1:
-        dir = input("Ingresa la direccion donde desea que se guarde el archivo csv\nEjemplo: C:\Desktop\archivo.csv : ")
+        dir = input("Ingresa la direccion donde desea que se guarde el archivo csv\nEjemplo: C:\Desktop\ archivo.csv : ")
         registros.T.to_csv(dir)
     else:
-        dir = input("Ingresa la direccion donde desea que se guarde el archivo json\nEjemplo: C:\Desktop\archivo.json : ")
+        dir = input("Ingresa la direccion donde desea que se guarde el archivo json\nEjemplo: C:\Desktop\ archivo.json : ")
         registros.T.to_json(dir)
     print(separador)
     menu()
